@@ -1,0 +1,160 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #222222;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.logo p {
+    margin: 5px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+ 
+    transition: background-color 0.2s, transform 0.5s; 
+    margin-top: 50px;
+}
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px; 
+    margin-top: 20px;
+    margin: 0;
+    
+}
+
+nav ul li a:hover {
+    color: #00ffaa;
+   
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: background-color 0.1s, transform 0.3s; 
+}
+.social-links img:hover {
+    transform: scale(1.2)
+}
+
+main {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding: 40px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+h1 {
+    font-size: 100px;
+    margin-top: 20px; 
+  
+}
+h2 {
+    font-size: 95px;
+    
+  }
+h3 {
+    font-size: 80px;
+    
+  }
+h4 {
+    font-size:20px;
+    color: rgb(105, 104, 104);
+    
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.highlight {
+    color: #00ffaa;
+}
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 70px;
+    color: #2ace97;
+    background-color: #222222;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.6s; 
+    border: solid 2px #2ace97;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+
+p{
+    justify-content: left;
+    color: #00ffaa;
+    transition: background-color 0.3s, transform 0.6s; 
+}
+p:hover{
+    transform: scale(1.05);
+}
+a {
+    color: #00ffaa;
+}
